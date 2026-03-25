@@ -10,5 +10,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     base: command === "build" ? pagesBase : "/",
     plugins: [react()],
+    // One gsap instance only (avoids odd plugin behavior if deps resolve two copies).
+    resolve: { dedupe: ["gsap"] },
   };
 });
