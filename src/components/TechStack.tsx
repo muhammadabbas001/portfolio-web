@@ -10,24 +10,25 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import { assetUrl } from "../utils/assetUrl";
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/swift.jpg",
-  "/images/swiftui.jpg",
-  "/images/xcode.jpg",
-  "/images/postman.jpg",
-  "/images/cursor.jpg",
-  "/images/git.jpg",
-  "/images/ml.jpg",
-  "/images/appledeveloper.jpg",
-  "/images/apple.jpg",
-  "/images/graphql.jpg",
-  "/images/mvvm.jpg",
-  "/images/firebase.jpg",
-  "/images/ios.jpg",
-  "/images/testflight.jpg",
-];
+  "images/swift.jpg",
+  "images/swiftui.jpg",
+  "images/xcode.jpg",
+  "images/postman.jpg",
+  "images/cursor.jpg",
+  "images/git.jpg",
+  "images/ml.jpg",
+  "images/appledeveloper.jpg",
+  "images/apple.jpg",
+  "images/graphql.jpg",
+  "images/mvvm.jpg",
+  "images/firebase.jpg",
+  "images/ios.jpg",
+  "images/testflight.jpg",
+].map((path) => assetUrl(path));
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
@@ -205,7 +206,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files={assetUrl("models/char_enviorment.hdr")}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />

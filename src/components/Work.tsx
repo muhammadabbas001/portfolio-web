@@ -1,4 +1,5 @@
 import "./styles/Work.css";
+import { assetUrl } from "../utils/assetUrl";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -104,7 +105,7 @@ const Work = () => {
                 <p>{project.tools}</p>
               </div>
               <WorkImage
-                image={`/images/project_${index + 1}.png`}
+                image={assetUrl(`/images/project_${index + 1}.png`)}
                 alt={`${project.name} — ${project.category}`}
               />
             </div>
