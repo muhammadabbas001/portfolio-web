@@ -15,43 +15,61 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Sr. iOS Engineer</h4>
+                <h5>Wow Earn</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Integrated high quality Chat, Video & Audio Call and Ucard features. Improved business logic for better app performance and reduced technical debt.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Sr. iOS Engineer</h4>
+                <h5>Vigorous Technologies</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2022</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Implemented Clean Architecture in iOS applications. Led a cross-functional team to successfully deliver 7 iOS applications. Streamlined the iOS release process using CI/CD.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>iOS Engineer</h4>
+                <h5>Inov8 Limited</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2021</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Designed and implemented the RASST payment module. Enhanced the Meezan Bank app's sign-up flow. Meezan Bank app achieved 5M+ installs on App Stores.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>iOS Engineer</h4>
+                <h5>iParagons</h5>
+              </div>
+              <h3>2020</h3>
+            </div>
+            <p>
+              Improved the company's revenue by developing a location recommendation system using recombee. Handled the complete TestFlight & App Store distribution process.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Bachelor’s in Computer Science</h4>
+                <h5>University of Gujrat, Pakistan</h5>
+              </div>
+              <h3>2016 - 2020</h3>
+            </div>
+            <p>
+              Ranked in the top 10% of my batch. Studied at one of the top universities in Pakistan.
             </p>
           </div>
         </div>

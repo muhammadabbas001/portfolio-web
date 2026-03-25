@@ -87,24 +87,23 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
+              <h3>iOS Development</h3>
               <h4>Description</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Experienced in applying Clean Architecture, MVVM, Combine and building high-performance iOS apps.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Swift</div>
+                <div className="what-tags">SwiftUI</div>
+                <div className="what-tags">UIKit</div>
+                <div className="what-tags">MVVM</div>
+                <div className="what-tags">Clean Architecture</div>
+                <div className="what-tags">Combine</div>
+                <div className="what-tags">CoreData</div>
+                <div className="what-tags">Firebase</div>
+                <div className="what-tags">REST Api</div>
+                <div className="what-tags">Fastlane</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +127,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
+              <h3>Architecture & Web3</h3>
               <h4>Description</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Integrating RESTful APIs, Crypto/Web3 features, handling complex data flows and working with modern tools.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">XCTest</div>
+                <div className="what-tags">CI/CD</div>
+                <div className="what-tags">Crypto/Web3</div>
+                <div className="what-tags">Fintech</div>
+                <div className="what-tags">SourceTree</div>
+                <div className="what-tags">Agile</div>
+                <div className="what-tags">Jira</div>
+                <div className="what-tags">Figma</div>
               </div>
               <div className="what-arrow"></div>
             </div>
