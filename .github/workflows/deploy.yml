@@ -1,11 +1,14 @@
 # Build and deploy the Vite app to GitHub Pages.
-# Repo Settings → Pages → Source: GitHub Actions.
+# Repo Settings → Pages → Source: GitHub Actions (not "Deploy from a branch").
+# Until this workflow completes successfully at least once, Pages may still
+# show an old branch deploy (raw index.html + /src/main.tsx = white screen).
 
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -36,6 +39,26 @@ jobs:
         env:
           # Must match your repository name (site URL: /${repo}/)
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
+
+      - name: Verify production output (not dev index.html)
+        run: |
+          test -f dist/index.html
+          if grep -q '/src/main.tsx' dist/index.html; then
+            echo "::error::dist/index.html still references dev entry — build misconfigured"
+            cat dist/index.html
+            exit 1
+          fi
+          if ! grep -qE 'assets/index-[^"]+\.js' dist/index.html; then
+            echo "::error::dist/index.html missing Vite JS bundle"
+            cat dist/index.html
+            exit 1
+          fi
+          if grep -q '%BASE_URL%' dist/index.html; then
+            echo "::error::dist/index.html still has unreplaced %BASE_URL%"
+            exit 1
+          fi
+          echo "OK: dist/index.html is a Vite production build"
+          head -20 dist/index.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
