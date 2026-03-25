@@ -34,7 +34,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 560px;
   margin-left: 200px;
   position: relative;
   display: none;
@@ -48,6 +48,8 @@
   position: relative;
   padding: 50px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .what-noTouch:hover,
@@ -199,14 +201,19 @@
   animation: whatBorders 1.2s 1 forwards;
 }
 .what-border2 svg {
-  height: 500px;
+  height: 560px;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
 }
 .what-content-in {
-  height: 100%;
-  overflow: hidden;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-bottom: 4px;
+  box-sizing: border-box;
 }
 .what-content-in h5 {
   font-weight: 300;
@@ -249,7 +256,10 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    height: 460px;
+  }
+  .what-border2 svg {
+    height: 460px;
   }
   .what-content h3 {
     font-size: 28px;
@@ -290,8 +300,11 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
+    height: 560px;
     margin-left: -50px;
+  }
+  .what-border2 svg {
+    height: 560px;
   }
   .what-content {
     padding: 50px;
@@ -326,7 +339,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: 560px;
   }
   .what-box {
     width: 500px;
@@ -338,7 +351,10 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 500px;
+  }
+  .what-border2 svg {
+    height: 500px;
   }
   .what-content h5,
   .what-content-flex {

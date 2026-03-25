@@ -42,8 +42,13 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          RESUME
+        <a href="/#" className="navbar-title" data-cursor="disable" aria-label="Home">
+          <img
+            className="navbar-logo"
+            src="/images/applelogo.png"
+            alt=""
+            decoding="async"
+          />
         </a>
         <a
           href="mailto:muhammdabbas.cs@gmail.com"
