@@ -53,7 +53,7 @@ const Contact = () => {
               Designed and Developed <br /> by <span>Muhammad Abbas</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> 2025
             </h5>
           </div>
         </div>

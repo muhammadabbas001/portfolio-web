@@ -60,18 +60,6 @@ const Career = () => {
               Improved the company's revenue by developing a location recommendation system using recombee. Handled the complete TestFlight & App Store distribution process.
             </p>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Bachelor’s in Computer Science</h4>
-                <h5>University of Gujrat, Pakistan</h5>
-              </div>
-              <h3>2016 - 2020</h3>
-            </div>
-            <p>
-              Ranked in the top 10% of my batch. Studied at one of the top universities in Pakistan.
-            </p>
-          </div>
         </div>
       </div>
     </div>
